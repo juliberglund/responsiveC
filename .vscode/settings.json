@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "notebook.defaultFormatter": "ParthR2031.colorful-comments",
+  "editor.guides.bracketPairs": false,
+  "editor.formatOnSave": true,
+  "prettier.bracketSameLine": true
+}
