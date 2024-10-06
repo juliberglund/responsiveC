@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+img {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -11,7 +15,7 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 8%;
 }
 
 .navbarw {
@@ -83,6 +87,7 @@ main {
 .catGrid img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 footer {
@@ -106,6 +111,9 @@ footer {
     margin: 0;
     padding: 0;
   }
+  .section {
+    flex-direction: column;
+  }
   main {
     display: flex;
     justify-content: center;
@@ -117,9 +125,14 @@ footer {
     display: none;
   }
 
+  header {
+    width: 95%;
+  }
+
   .dropdown {
     position: relative;
     display: inline-block;
+    width: 10%;
   }
 
   .navbar {
@@ -132,7 +145,11 @@ footer {
   }
 
   .navbar p {
-    font-size: 12px;
+    font-size: 80%;
+  }
+
+  nav {
+    width: 100%;
   }
 
   .navbar a {
@@ -149,11 +166,67 @@ footer {
   .menu {
     position: sticky;
     justify-content: center;
-    width: 100%;
-    padding: 12px;
+    padding: 25%;
     background-color: #555;
     color: #fff;
     border: none;
     cursor: pointer;
+  }
+
+  .hampic {
+    display: grid;
+    justify-content: end;
+  }
+
+  .Hamgrid {
+    display: block;
+    width: 100%;
+  }
+
+  .section-section1 {
+    display: flex;
+    padding: 10%;
+    width: 87%;
+    background-color: #f1f1f1;
+    margin: 3%;
+    border: 1px solid #ddd;
+    border-radius: 1%;
+  }
+
+  .section-section1 img {
+    width: 50%;
+  }
+  .sectionmeny {
+    width: 68%;
+    display: flex;
+    padding: 20%;
+    background-color: #f1f1f1;
+    margin: 3%;
+    border: 1px solid #ddd;
+    border-radius: 1%;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  .sectionmeny img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .section {
+    display: flex;
+    padding: 10%;
+    width: 90%;
+    margin: 1%;
+  }
+
+  .section img {
+    width: 45%;
+  }
+
+  footer {
+    width: 100%;
   }
 }
