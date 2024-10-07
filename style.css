@@ -110,6 +110,23 @@ footer {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
   }
   .section {
     flex-direction: column;
@@ -123,10 +140,6 @@ footer {
   }
   .web-only {
     display: none;
-  }
-
-  header {
-    width: 95%;
   }
 
   .dropdown {
@@ -188,7 +201,7 @@ footer {
     padding: 10%;
     width: 87%;
     background-color: #f1f1f1;
-    margin: 3%;
+    margin: 1%;
     border: 1px solid #ddd;
     border-radius: 1%;
   }
@@ -201,9 +214,27 @@ footer {
     display: flex;
     padding: 20%;
     background-color: #f1f1f1;
-    margin: 3%;
+    margin: 1%;
     border: 1px solid #ddd;
     border-radius: 1%;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  h1:hover {
+    animation: fadeIn 2s ease-in-out forwards;
   }
 
   h2 {
