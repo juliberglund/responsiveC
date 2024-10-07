@@ -260,4 +260,8 @@ footer {
   footer {
     width: 100%;
   }
+
+  button a {
+    color: aqua;
+  }
 }
