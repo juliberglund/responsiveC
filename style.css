@@ -51,6 +51,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 900px;
 }
 
@@ -113,6 +114,17 @@ footer {
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    font-size: 16px; /* Basstorlek för mobila enheter */
+  }
+  header h1 {
+    font-size: 1.5em; /* Relativ storlek för h1 */
+  }
+  .section1 h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1em; /* Relativ storlek för p */
   }
   @keyframes example {
     0% {
@@ -131,10 +143,22 @@ footer {
   .section {
     flex-direction: column;
   }
-  main {
-    display: flex;
-    justify-content: center;
+
+  .section,
+  .section-section1,
+  .sectionmeny {
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
   }
+
+  .section img,
+  .section-section1 img,
+  .sectionmeny img {
+    width: 100%;
+    height: auto;
+  }
+
   .mobile-only {
     display: block;
   }
@@ -186,26 +210,6 @@ footer {
     cursor: pointer;
   }
 
-  .hampic {
-    display: grid;
-    justify-content: end;
-  }
-
-  .Hamgrid {
-    display: block;
-    width: 100%;
-  }
-
-  .section-section1 {
-    display: flex;
-    padding: 10%;
-    width: 87%;
-    background-color: #f1f1f1;
-    margin: 1%;
-    border: 1px solid #ddd;
-    border-radius: 1%;
-  }
-
   .section-section1 img {
     width: 50%;
   }
@@ -237,10 +241,6 @@ footer {
     animation: fadeIn 2s ease-in-out forwards;
   }
 
-  h2 {
-    width: 100%;
-  }
-
   .sectionmeny img {
     height: 50%;
     width: 50%;
@@ -255,10 +255,6 @@ footer {
 
   .section img {
     width: 45%;
-  }
-
-  footer {
-    width: 100%;
   }
 
   button a {
