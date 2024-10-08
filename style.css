@@ -142,6 +142,10 @@ footer {
   }
   .section {
     flex-direction: column;
+    display: flex;
+    padding: 10%;
+    width: 90%;
+    margin: 1%;
   }
 
   .section,
@@ -164,6 +168,16 @@ footer {
   }
   .web-only {
     display: none;
+  }
+
+  .catGrid {
+    display: contents;
+    width: 100%;
+  }
+
+  .catGrid img:hover {
+    filter: brightness(80%);
+    transition: filter 0.3s ease;
   }
 
   .dropdown {
@@ -244,13 +258,6 @@ footer {
   .sectionmeny img {
     height: 50%;
     width: 50%;
-  }
-
-  .section {
-    display: flex;
-    padding: 10%;
-    width: 90%;
-    margin: 1%;
   }
 
   .section img {
